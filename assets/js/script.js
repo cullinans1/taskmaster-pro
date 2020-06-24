@@ -59,12 +59,12 @@ $(".list-group").on("blur", "textarea", function() {
   //get the textareas current value/text
   var text = $(this)
     .val()
-    .trim();
+  .trim();
   //get the parents ul id attribute
   var status = $(this)
-    .closest(".list-gorup")
-    .attr("id")
-    .replace("list-");
+  .closest(".list-group")
+  .attr("id")
+  .replace("list-", "");
   //get the tasks position in the list of other li elements
   var index = $(this)
     .closest(".list-group-item")
